@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sreedevi AU | Cybersecurity SOC Analyst</title>
+  <meta name="description" content="Portfolio of Sreedevi AU, an aspiring Cybersecurity SOC Analyst from Kerala, India. BCA graduate trained at Offeso Hackers Academy.">
+  <meta name="author" content="Sreedevi AU">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Sreedevi AU | Cybersecurity SOC Analyst">
+  <meta property="og:description" content="Learning cybersecurity and building practical blue-team skills.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 6 12 22v26c0 24 16 41 38 46 22-5 38-22 38-46V22z' fill='%2300d4aa'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="brand" aria-label="Sreedevi AU home">
+        <svg viewBox="0 0 100 100" width="26" height="26" aria-hidden="true"><path d="M50 6 12 22v26c0 24 16 41 38 46 22-5 38-22 38-46V22z" fill="currentColor"/></svg>
+        <span>SREEDEVI<span class="accent"> AU</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-btn" id="themeBtn" aria-label="Switch colour theme" title="Switch theme">&#9680;</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot"></span> Open to entry-level SOC opportunities</p>
+          <h1>SREEDEVI AU</h1>
+          <p class="role">Cybersecurity <span class="accent">SOC Analyst</span></p>
+          <p class="typing" aria-live="off"><span class="prompt">$</span> <span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="lead">BCA graduate from Kerala, India, learning cybersecurity and building practical skills in monitoring, log analysis and incident response.</p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn ghost" id="resumeBtn" href="assets/resume.pdf" download>Download resume</a>
+          </div>
+          <ul class="socials" id="heroSocials" aria-label="Profiles"></ul>
+        </div>
+        <aside class="terminal" aria-label="Profile summary">
+          <div class="term-bar"><i></i><i></i><i></i><span>soc-analyst@kerala:~</span></div>
+          <pre><code><span class="c">$</span> whoami
+sreedevi_au
+<span class="c">$</span> cat profile.txt
+role     : SOC Analyst (in training)
+degree   : BCA, University of Calicut
+training : Offeso Hackers Academy
+location : Kerala, India
+status   : learning + practising
+<span class="c">$</span> tail -f focus.log
+[+] monitoring &amp; alert triage
+[+] log analysis
+[+] network security basics
+[+] incident response workflow</code></pre>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">01</span> About me</h2>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>I'm Sreedevi, a Bachelor of Computer Applications graduate from the University of Calicut. After my degree I completed cybersecurity training at Offeso Hackers Academy, and I'm now focused on becoming a Security Operations Center (SOC) analyst.</p>
+            <p>I'm currently learning and developing practical skills: understanding how attacks look in logs, how alerts are triaged, and how incidents are documented and escalated. I enjoy methodical, detail-oriented work and I'm building my portfolio in public as I grow.</p>
+          </div>
+          <ul class="facts reveal">
+            <li><span>Name</span><strong>Sreedevi AU</strong></li>
+            <li><span>Title</span><strong>Cybersecurity SOC Analyst</strong></li>
+            <li><span>Location</span><strong>Kerala, India</strong></li>
+            <li><span>Status</span><strong>Learning &amp; building skills</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">02</span> Skills &amp; focus areas</h2>
+        <p class="section-sub reveal">Areas I'm studying and practising. I'm early in my career, so these are shown as learning stages rather than inflated percentages.</p>
+        <div class="cards" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">03</span> Education &amp; training</h2>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">04</span> Projects &amp; labs</h2>
+        <p class="section-sub reveal">Hands-on work will appear here as I complete it. Cards marked "Planned" or "In progress" are honest about where they stand.</p>
+        <div class="cards projects" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">05</span> Learning roadmap</h2>
+        <ul class="roadmap" id="roadmapList"></ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">06</span> Contact</h2>
+        <div class="contact-grid">
+          <div class="reveal">
+            <p>I'd love to hear about SOC analyst openings, internships, mentorship or collaboration. Reach out using any of the options below.</p>
+            <ul class="contact-list">
+              <li><span>Email</span><a id="emailLink" href="#"></a> <button class="copy" id="copyEmail" type="button">Copy</button></li>
+              <li><span>Phone</span><a id="phoneLink" href="#"></a></li>
+              <li><span>Location</span>Kerala, India</li>
+              <li><span>GitHub</span><span id="githubSlot"></span></li>
+            </ul>
+          </div>
+          <form class="form reveal" id="contactForm" novalidate>
+            <label>Name<input type="text" name="name" required autocomplete="name"></label>
+            <label>Email<input type="email" name="email" required autocomplete="email"></label>
+            <label>Message<textarea name="message" rows="5" required></textarea></label>
+            <button class="btn primary" type="submit">Send via email app</button>
+            <p class="form-note" id="formNote" role="status">This opens your email app with the message prefilled (no server needed).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sreedevi AU. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
